@@ -1,0 +1,13 @@
+public class MenuItem {
+    //put things here
+}
+
+private class Drink {
+    //put things here
+    //should either inherit from or include menuitems
+}
+
+private class Food {
+    //put things here
+    //should either inherit from or include menuitems
+}
