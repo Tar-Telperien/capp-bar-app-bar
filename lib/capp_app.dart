@@ -1,10 +1,10 @@
 /// Based on Material Flutter code sample for BottomNavigationBar
 // MAIN CAPP APP: houses bottom navigation bar and color theme
 import 'package:flutter/material.dart';
-import 'home_tab.dart';
-import 'menu_tab.dart';
-import 'orders_tab.dart';
-import 'account_tab.dart';
+import 'screens/home_tab.dart';
+import 'screens/menu_tab.dart';
+import 'screens/orders_tab.dart';
+import 'screens/account_tab.dart';
 
 class CappApp extends StatelessWidget {
   const CappApp({Key? key}) : super(key: key);
