@@ -1,4 +1,7 @@
+// Import firebase_core and cloud_firestore
 import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:flutter/material.dart';
 import 'capp_app.dart';
 
@@ -8,9 +11,12 @@ void main() async {
   runApp(Build());
 } 
 
+// ignore: must_be_immutable
 class Build extends StatelessWidget {
   // Create the initialization Future outside of `build`:
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+  // Create new Firestore instance
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   @override
   Widget build(BuildContext context) {
