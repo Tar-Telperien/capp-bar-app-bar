@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "880161591185",
+    "project_id": "capp-app",
+    "storage_bucket": "capp-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:880161591185:android:03078836a5a3717cd09430",
+        "android_client_info": {
+          "package_name": "com.udallas.cappapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "880161591185-2to9or72nhvj2teqr149v3ab517q4h3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUkm56b1WWanywqRmlATi1qo0ml3dfsgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "880161591185-2to9or72nhvj2teqr149v3ab517q4h3h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "880161591185-lvj041gs7u81t15rl0294sbm90c08dj4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.udallas.cappapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
