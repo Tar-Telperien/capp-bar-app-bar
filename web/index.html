@@ -29,6 +29,7 @@
   <title>capp_app</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
@@ -40,24 +41,31 @@
       });
     }
   </script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-firestore.js"></script>
   
+
   <!-- Firebase Configuration -->
   <script>
     var firebaseConfig = {
-      apiKey: "...",
-      authDomain: "[YOUR_PROJECT].firebaseapp.com",
-      databaseURL: "https://[YOUR_PROJECT].firebaseio.com",
-      projectId: "[YOUR_PROJECT]",
-      storageBucket: "[YOUR_PROJECT].appspot.com",
-      messagingSenderId: "...",
-      appId: "1:...:web:...",
-      measurementId: "G-...",
+      apiKey: "AIzaSyBAkPbSvnUjfS39MMMdPt1FzeZtIugvp9I",
+      authDomain: "capp-app.firebaseapp.com",
+      projectId: "capp-app",
+      storageBucket: "capp-app.appspot.com",
+      messagingSenderId: "880161591185",
+      appId: "1:880161591185:web:77fe287a0820ff10d09430",
+      measurementId: "G-25L7YB0JMD"
     };
 
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
   </script>
 
   <script src="main.dart.js" type="application/javascript"></script>
