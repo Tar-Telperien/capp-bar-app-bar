@@ -4,6 +4,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 
 import 'package:flutter/material.dart';
 import 'capp_app.dart';
+import 'screens/loading.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,9 +37,7 @@ class Build extends StatelessWidget {
         }
 
         // Otherwise, show something whilst waiting for initialization to complete
-        // TO DO
-        //return Loading();
-        return CappApp(); // for now
+        return Loading();
       },
     );
   }
