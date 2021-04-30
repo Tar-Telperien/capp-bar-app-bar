@@ -1,3 +1,2 @@
-2021/04/15-14:53:35.261 14803 Reusing MANIFEST /private/var/folders/hr/7p3_4yzs1f12_r_3x59bdhn00000gn/T/flutter_tools.SbzVPF/flutter_tools_chrome_device.EiaWrA/Default/Service Worker/Database/MANIFEST-000001
-2021/04/15-14:53:35.261 14803 Recovering log #3
-2021/04/15-14:53:35.262 14803 Reusing old log /private/var/folders/hr/7p3_4yzs1f12_r_3x59bdhn00000gn/T/flutter_tools.SbzVPF/flutter_tools_chrome_device.EiaWrA/Default/Service Worker/Database/000003.log 
+2021/04/29-23:22:41.239 400c Creating DB C:\Users\thoma\AppData\Local\Temp\flutter_tools.b58b2b36\flutter_tools_chrome_device.ca26b379\Default\Service Worker\Database since it was missing.
+2021/04/29-23:22:41.248 400c Reusing MANIFEST C:\Users\thoma\AppData\Local\Temp\flutter_tools.b58b2b36\flutter_tools_chrome_device.ca26b379\Default\Service Worker\Database/MANIFEST-000001

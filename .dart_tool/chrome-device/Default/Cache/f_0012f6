@@ -1,0 +1,755 @@
+define(['dart_sdk', 'packages/flutter/src/material/app.dart', 'packages/flutter/src/widgets/widget_span.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/flutter/src/widgets/bottom_navigation_bar_item.dart', 'packages/flutter/src/widgets/icon.dart', 'packages/flutter/src/widgets/icon_data.dart', 'packages/capp_app/screens/home_tab.dart', 'packages/capp_app/screens/menu_tab.dart', 'packages/capp_app/screens/orders_tab.dart', 'packages/capp_app/screens/account_tab.dart'], (function load__packages__capp_app__capp_app_dart(dart_sdk, packages__flutter__src__material__app$46dart, packages__flutter__src__widgets__widget_span$46dart, packages__flutter__src__material__icon_button$46dart, packages__flutter__src__widgets__bottom_navigation_bar_item$46dart, packages__flutter__src__widgets__icon$46dart, packages__flutter__src__widgets__icon_data$46dart, packages__capp_app__screens__home_tab$46dart, packages__capp_app__screens__menu_tab$46dart, packages__capp_app__screens__orders_tab$46dart, packages__capp_app__screens__account_tab$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const ui = dart_sdk.ui;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const app = packages__flutter__src__material__app$46dart.src__material__app;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const theme = packages__flutter__src__material__icon_button$46dart.src__material__theme;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const bottom_navigation_bar = packages__flutter__src__material__icon_button$46dart.src__material__bottom_navigation_bar;
+  const theme_data = packages__flutter__src__material__icon_button$46dart.src__material__theme_data;
+  const color_scheme = packages__flutter__src__material__icon_button$46dart.src__material__color_scheme;
+  const bottom_navigation_bar_item = packages__flutter__src__widgets__bottom_navigation_bar_item$46dart.src__widgets__bottom_navigation_bar_item;
+  const icon = packages__flutter__src__widgets__icon$46dart.src__widgets__icon;
+  const icon_data = packages__flutter__src__widgets__icon_data$46dart.src__widgets__icon_data;
+  const home_tab = packages__capp_app__screens__home_tab$46dart.screens__home_tab;
+  const menu_tab = packages__capp_app__screens__menu_tab$46dart.screens__menu_tab;
+  const orders_tab = packages__capp_app__screens__orders_tab$46dart.screens__orders_tab;
+  const account_tab = packages__capp_app__screens__account_tab$46dart.screens__account_tab;
+  var capp_app = Object.create(dart.library);
+  var $elementAt = dartx.elementAt;
+  dart._checkModuleNullSafetyMode(true);
+  var T = {
+    VoidTovoid: () => (T.VoidTovoid = dart.constFn(dart.fnType(dart.void, [])))(),
+    JSArrayOfWidget: () => (T.JSArrayOfWidget = dart.constFn(_interceptors.JSArray$(framework.Widget)))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C1() {
+      return C[1] = dart.constList([], widget_inspector._Location);
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 16,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C4() {
+      return C[4] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "title",
+        [_Location_column]: 7,
+        [_Location_line]: 15,
+        [_Location_file]: null
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "home",
+        [_Location_column]: 7,
+        [_Location_line]: 16,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "theme",
+        [_Location_column]: 7,
+        [_Location_line]: 17,
+        [_Location_file]: null
+      });
+    },
+    get C3() {
+      return C[3] = dart.constList([C[4] || CT.C4, C[5] || CT.C5, C[6] || CT.C6], widget_inspector._Location);
+    },
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[3] || CT.C3,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 14,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 9,
+        [_Location_line]: 60,
+        [_Location_file]: null
+      });
+    },
+    get C8() {
+      return C[8] = dart.constList([C[9] || CT.C9], widget_inspector._Location);
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[8] || CT.C8,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 59,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 77,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15], widget_inspector._Location);
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: null,
+        [IconData_fontFamily]: "MaterialIcons",
+        [IconData_codePoint]: 57898
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: icon.Icon.prototype,
+        [Widget__location]: C[13] || CT.C13,
+        [Widget_key]: null,
+        [Icon_textDirection]: null,
+        [Icon_semanticLabel]: null,
+        [Icon_color]: null,
+        [Icon_size]: null,
+        [Icon_icon]: C[16] || CT.C16
+      });
+    },
+    get C11() {
+      return C[11] = dart.const({
+        __proto__: bottom_navigation_bar_item.BottomNavigationBarItem.prototype,
+        [BottomNavigationBarItem_tooltip]: null,
+        [BottomNavigationBarItem_backgroundColor]: null,
+        [BottomNavigationBarItem_label]: "Home",
+        [BottomNavigationBarItem_title]: null,
+        [BottomNavigationBarItem_activeIcon]: C[12] || CT.C12,
+        [BottomNavigationBarItem_icon]: C[12] || CT.C12
+      });
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C20() {
+      return C[20] = dart.constList([C[21] || CT.C21], widget_inspector._Location);
+    },
+    get C19() {
+      return C[19] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[20] || CT.C20,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 81,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C22() {
+      return C[22] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: null,
+        [IconData_fontFamily]: "MaterialIcons",
+        [IconData_codePoint]: 57992
+      });
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: icon.Icon.prototype,
+        [Widget__location]: C[19] || CT.C19,
+        [Widget_key]: null,
+        [Icon_textDirection]: null,
+        [Icon_semanticLabel]: null,
+        [Icon_color]: null,
+        [Icon_size]: null,
+        [Icon_icon]: C[22] || CT.C22
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: bottom_navigation_bar_item.BottomNavigationBarItem.prototype,
+        [BottomNavigationBarItem_tooltip]: null,
+        [BottomNavigationBarItem_backgroundColor]: null,
+        [BottomNavigationBarItem_label]: "Menu",
+        [BottomNavigationBarItem_title]: null,
+        [BottomNavigationBarItem_activeIcon]: C[18] || CT.C18,
+        [BottomNavigationBarItem_icon]: C[18] || CT.C18
+      });
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 85,
+        [_Location_file]: null
+      });
+    },
+    get C26() {
+      return C[26] = dart.constList([C[27] || CT.C27], widget_inspector._Location);
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[26] || CT.C26,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 85,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C28() {
+      return C[28] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: null,
+        [IconData_fontFamily]: "MaterialIcons",
+        [IconData_codePoint]: 58389
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: icon.Icon.prototype,
+        [Widget__location]: C[25] || CT.C25,
+        [Widget_key]: null,
+        [Icon_textDirection]: null,
+        [Icon_semanticLabel]: null,
+        [Icon_color]: null,
+        [Icon_size]: null,
+        [Icon_icon]: C[28] || CT.C28
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: bottom_navigation_bar_item.BottomNavigationBarItem.prototype,
+        [BottomNavigationBarItem_tooltip]: null,
+        [BottomNavigationBarItem_backgroundColor]: null,
+        [BottomNavigationBarItem_label]: "Orders",
+        [BottomNavigationBarItem_title]: null,
+        [BottomNavigationBarItem_activeIcon]: C[24] || CT.C24,
+        [BottomNavigationBarItem_icon]: C[24] || CT.C24
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "icon",
+        [_Location_column]: 30,
+        [_Location_line]: 89,
+        [_Location_file]: null
+      });
+    },
+    get C32() {
+      return C[32] = dart.constList([C[33] || CT.C33], widget_inspector._Location);
+    },
+    get C31() {
+      return C[31] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[32] || CT.C32,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 89,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: icon_data.IconData.prototype,
+        [IconData_matchTextDirection]: false,
+        [IconData_fontPackage]: null,
+        [IconData_fontFamily]: "MaterialIcons",
+        [IconData_codePoint]: 58193
+      });
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: icon.Icon.prototype,
+        [Widget__location]: C[31] || CT.C31,
+        [Widget_key]: null,
+        [Icon_textDirection]: null,
+        [Icon_semanticLabel]: null,
+        [Icon_color]: null,
+        [Icon_size]: null,
+        [Icon_icon]: C[34] || CT.C34
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: bottom_navigation_bar_item.BottomNavigationBarItem.prototype,
+        [BottomNavigationBarItem_tooltip]: null,
+        [BottomNavigationBarItem_backgroundColor]: null,
+        [BottomNavigationBarItem_label]: "Account",
+        [BottomNavigationBarItem_title]: null,
+        [BottomNavigationBarItem_activeIcon]: C[30] || CT.C30,
+        [BottomNavigationBarItem_icon]: C[30] || CT.C30
+      });
+    },
+    get C10() {
+      return C[10] = dart.constList([C[11] || CT.C11, C[17] || CT.C17, C[23] || CT.C23, C[29] || CT.C29], bottom_navigation_bar_item.BottomNavigationBarItem);
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "type",
+        [_Location_column]: 9,
+        [_Location_line]: 64,
+        [_Location_file]: null
+      });
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "currentIndex",
+        [_Location_column]: 9,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "onTap",
+        [_Location_column]: 9,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "backgroundColor",
+        [_Location_column]: 9,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "selectedItemColor",
+        [_Location_column]: 9,
+        [_Location_line]: 69,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "unselectedItemColor",
+        [_Location_column]: 9,
+        [_Location_line]: 70,
+        [_Location_file]: null
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "selectedLabelStyle",
+        [_Location_column]: 9,
+        [_Location_line]: 71,
+        [_Location_file]: null
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "unselectedLabelStyle",
+        [_Location_column]: 9,
+        [_Location_line]: 72,
+        [_Location_file]: null
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "items",
+        [_Location_column]: 9,
+        [_Location_line]: 75,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37, C[38] || CT.C38, C[39] || CT.C39, C[40] || CT.C40, C[41] || CT.C41, C[42] || CT.C42, C[43] || CT.C43, C[44] || CT.C44, C[45] || CT.C45], widget_inspector._Location);
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 28,
+        [_Location_line]: 63,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 59,
+        [_Location_file]: null
+      });
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottomNavigationBar",
+        [_Location_column]: 7,
+        [_Location_line]: 63,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.constList([C[48] || CT.C48, C[49] || CT.C49], widget_inspector._Location);
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[47] || CT.C47,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 55,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C50() {
+      return C[50] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 5,
+        [_Location_line]: 36,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 5,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 5,
+        [_Location_line]: 38,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 5,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart"
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: ui.Brightness.prototype,
+        [_name]: "Brightness.light",
+        index: 1
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294308843.0
+      });
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4280489737.0
+      });
+    },
+    get C58() {
+      return C[58] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4291101483.0
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294967295.0
+      });
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4294304437.0
+      });
+    },
+    get C61() {
+      return C[61] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4281876534.0
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: ui.Color.prototype,
+        [Color_value]: 4286747774.0
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: color_scheme.ColorScheme.prototype,
+        [ColorScheme_brightness]: C[55] || CT.C55,
+        [ColorScheme_onError]: C[56] || CT.C56,
+        [ColorScheme_onBackground]: C[57] || CT.C57,
+        [ColorScheme_onSurface]: C[57] || CT.C57,
+        [ColorScheme_onSecondary]: C[57] || CT.C57,
+        [ColorScheme_onPrimary]: C[57] || CT.C57,
+        [ColorScheme_error]: C[58] || CT.C58,
+        [ColorScheme_background]: C[59] || CT.C59,
+        [ColorScheme_surface]: C[60] || CT.C60,
+        [ColorScheme_secondaryVariant]: C[57] || CT.C57,
+        [ColorScheme_secondary]: C[60] || CT.C60,
+        [ColorScheme_primaryVariant]: C[61] || CT.C61,
+        [ColorScheme_primary]: C[62] || CT.C62
+      });
+    }
+  }, false);
+  var C = Array(63).fill(void 0);
+  var I = [
+    "file:///C:/Users/thoma/Documents/GitKraken/capp-bar-app-bar/lib/capp_app.dart",
+    "package:capp_app/capp_app.dart"
+  ];
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  capp_app.CappApp = class CappApp extends framework.StatelessWidget {
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 13, 29, "context");
+      return new app.MaterialApp.new({title: "Capp Bar App", home: new capp_app.CappAppHomePage.new({$creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), theme: capp_app._buildCappBarTheme(), $creationLocationd_0dea112b090073317d4: C[2] || CT.C2});
+    }
+  };
+  (capp_app.CappApp.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    capp_app.CappApp.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = capp_app.CappApp.prototype;
+  dart.addTypeTests(capp_app.CappApp);
+  dart.addTypeCaches(capp_app.CappApp);
+  dart.setMethodSignature(capp_app.CappApp, () => ({
+    __proto__: dart.getMethods(capp_app.CappApp.__proto__),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(capp_app.CappApp, I[1]);
+  capp_app.CappAppHomePage = class CappAppHomePage extends framework.StatefulWidget {
+    createState() {
+      return new capp_app._CappAppHomePageState.new();
+    }
+  };
+  (capp_app.CappAppHomePage.new = function(opts) {
+    let key = opts && 'key' in opts ? opts.key : null;
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    capp_app.CappAppHomePage.__proto__.new.call(this, {key: key, $creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = capp_app.CappAppHomePage.prototype;
+  dart.addTypeTests(capp_app.CappAppHomePage);
+  dart.addTypeCaches(capp_app.CappAppHomePage);
+  dart.setMethodSignature(capp_app.CappAppHomePage, () => ({
+    __proto__: dart.getMethods(capp_app.CappAppHomePage.__proto__),
+    createState: dart.fnType(capp_app._CappAppHomePageState, [])
+  }));
+  dart.setLibraryUri(capp_app.CappAppHomePage, I[1]);
+  var _selectedIndex = dart.privateName(capp_app, "_selectedIndex");
+  var _onItemTapped = dart.privateName(capp_app, "_onItemTapped");
+  var BottomNavigationBarItem_tooltip = dart.privateName(bottom_navigation_bar_item, "BottomNavigationBarItem.tooltip");
+  var BottomNavigationBarItem_backgroundColor = dart.privateName(bottom_navigation_bar_item, "BottomNavigationBarItem.backgroundColor");
+  var BottomNavigationBarItem_label = dart.privateName(bottom_navigation_bar_item, "BottomNavigationBarItem.label");
+  var BottomNavigationBarItem_title = dart.privateName(bottom_navigation_bar_item, "BottomNavigationBarItem.title");
+  var Widget__location = dart.privateName(framework, "Widget._location");
+  var Widget_key = dart.privateName(framework, "Widget.key");
+  var Icon_textDirection = dart.privateName(icon, "Icon.textDirection");
+  var Icon_semanticLabel = dart.privateName(icon, "Icon.semanticLabel");
+  var Icon_color = dart.privateName(icon, "Icon.color");
+  var Icon_size = dart.privateName(icon, "Icon.size");
+  var IconData_matchTextDirection = dart.privateName(icon_data, "IconData.matchTextDirection");
+  var IconData_fontPackage = dart.privateName(icon_data, "IconData.fontPackage");
+  var IconData_fontFamily = dart.privateName(icon_data, "IconData.fontFamily");
+  var IconData_codePoint = dart.privateName(icon_data, "IconData.codePoint");
+  var Icon_icon = dart.privateName(icon, "Icon.icon");
+  var BottomNavigationBarItem_activeIcon = dart.privateName(bottom_navigation_bar_item, "BottomNavigationBarItem.activeIcon");
+  var BottomNavigationBarItem_icon = dart.privateName(bottom_navigation_bar_item, "BottomNavigationBarItem.icon");
+  capp_app._CappAppHomePageState = class _CappAppHomePageState extends framework.State$(capp_app.CappAppHomePage) {
+    [_onItemTapped](index) {
+      if (index == null) dart.nullFailed(I[0], 43, 26, "index");
+      this.setState(dart.fn(() => {
+        this[_selectedIndex] = index;
+      }, T.VoidTovoid()));
+    }
+    build(context) {
+      if (context == null) dart.nullFailed(I[0], 51, 29, "context");
+      let colorScheme = theme.Theme.of(context).colorScheme;
+      let textTheme = theme.Theme.of(context).textTheme;
+      return new scaffold.Scaffold.new({body: new basic.Center.new({child: capp_app._CappAppHomePageState._widgetOptions[$elementAt](this[_selectedIndex]), $creationLocationd_0dea112b090073317d4: C[7] || CT.C7}), bottomNavigationBar: new bottom_navigation_bar.BottomNavigationBar.new({type: bottom_navigation_bar.BottomNavigationBarType.fixed, currentIndex: this[_selectedIndex], onTap: dart.bind(this, _onItemTapped), backgroundColor: colorScheme.surface, selectedItemColor: colorScheme.onSurface, unselectedItemColor: colorScheme.onSurface.withOpacity(0.6), selectedLabelStyle: textTheme.caption, unselectedLabelStyle: textTheme.caption, items: C[10] || CT.C10, $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), $creationLocationd_0dea112b090073317d4: C[46] || CT.C46});
+    }
+  };
+  (capp_app._CappAppHomePageState.new = function() {
+    this[_selectedIndex] = 0;
+    capp_app._CappAppHomePageState.__proto__.new.call(this);
+    ;
+  }).prototype = capp_app._CappAppHomePageState.prototype;
+  dart.addTypeTests(capp_app._CappAppHomePageState);
+  dart.addTypeCaches(capp_app._CappAppHomePageState);
+  dart.setMethodSignature(capp_app._CappAppHomePageState, () => ({
+    __proto__: dart.getMethods(capp_app._CappAppHomePageState.__proto__),
+    [_onItemTapped]: dart.fnType(dart.void, [core.int]),
+    build: dart.fnType(framework.Widget, [framework.BuildContext])
+  }));
+  dart.setLibraryUri(capp_app._CappAppHomePageState, I[1]);
+  dart.setFieldSignature(capp_app._CappAppHomePageState, () => ({
+    __proto__: dart.getFields(capp_app._CappAppHomePageState.__proto__),
+    [_selectedIndex]: dart.fieldType(core.int)
+  }));
+  dart.defineLazy(capp_app._CappAppHomePageState, {
+    /*capp_app._CappAppHomePageState._widgetOptions*/get _widgetOptions() {
+      return T.JSArrayOfWidget().of([new home_tab.Home.new({$creationLocationd_0dea112b090073317d4: C[50] || CT.C50}), new menu_tab.Menu.new({$creationLocationd_0dea112b090073317d4: C[51] || CT.C51}), new orders_tab.Orders.new({$creationLocationd_0dea112b090073317d4: C[52] || CT.C52}), new account_tab.Account.new({$creationLocationd_0dea112b090073317d4: C[53] || CT.C53})]);
+    },
+    set _widgetOptions(_) {}
+  }, false);
+  capp_app._buildCappBarTheme = function _buildCappBarTheme() {
+    let base = theme_data.ThemeData.light();
+    return base.copyWith({colorScheme: capp_app._cappBarColorScheme, textTheme: capp_app._buildCappBarTextTheme(base.textTheme)});
+  };
+  capp_app._buildCappBarTextTheme = function _buildCappBarTextTheme(base) {
+    if (base == null) dart.nullFailed(I[0], 107, 44, "base");
+    return base.copyWith({caption: dart.nullCheck(base.caption).copyWith({fontWeight: ui.FontWeight.w400, fontSize: 11.0, letterSpacing: 0.03}), button: dart.nullCheck(base.button).copyWith({fontWeight: ui.FontWeight.w500, fontSize: 11.0, letterSpacing: 0.03})}).apply({fontFamily: "Montserrat", displayColor: capp_app.coffeeBrown, bodyColor: capp_app.coffeeBrown});
+  };
+  var _name = dart.privateName(ui, "_name");
+  var ColorScheme_brightness = dart.privateName(color_scheme, "ColorScheme.brightness");
+  var Color_value = dart.privateName(ui, "Color.value");
+  var ColorScheme_onError = dart.privateName(color_scheme, "ColorScheme.onError");
+  var ColorScheme_onBackground = dart.privateName(color_scheme, "ColorScheme.onBackground");
+  var ColorScheme_onSurface = dart.privateName(color_scheme, "ColorScheme.onSurface");
+  var ColorScheme_onSecondary = dart.privateName(color_scheme, "ColorScheme.onSecondary");
+  var ColorScheme_onPrimary = dart.privateName(color_scheme, "ColorScheme.onPrimary");
+  var ColorScheme_error = dart.privateName(color_scheme, "ColorScheme.error");
+  var ColorScheme_background = dart.privateName(color_scheme, "ColorScheme.background");
+  var ColorScheme_surface = dart.privateName(color_scheme, "ColorScheme.surface");
+  var ColorScheme_secondaryVariant = dart.privateName(color_scheme, "ColorScheme.secondaryVariant");
+  var ColorScheme_secondary = dart.privateName(color_scheme, "ColorScheme.secondary");
+  var ColorScheme_primaryVariant = dart.privateName(color_scheme, "ColorScheme.primaryVariant");
+  var ColorScheme_primary = dart.privateName(color_scheme, "ColorScheme.primary");
+  dart.defineLazy(capp_app, {
+    /*capp_app._cappBarColorScheme*/get _cappBarColorScheme() {
+      return C[54] || CT.C54;
+    },
+    /*capp_app.sageGreen*/get sageGreen() {
+      return C[62] || CT.C62;
+    },
+    /*capp_app.sageGreen2*/get sageGreen2() {
+      return C[61] || CT.C61;
+    },
+    /*capp_app.coffeeYellow*/get coffeeYellow() {
+      return C[60] || CT.C60;
+    },
+    /*capp_app.coffeeBrown*/get coffeeBrown() {
+      return C[57] || CT.C57;
+    },
+    /*capp_app.surfaceWhite*/get surfaceWhite() {
+      return C[56] || CT.C56;
+    },
+    /*capp_app.backgroundWhite*/get backgroundWhite() {
+      return C[59] || CT.C59;
+    },
+    /*capp_app.errorRed*/get errorRed() {
+      return C[58] || CT.C58;
+    },
+    /*capp_app.defaultLetterSpacing*/get defaultLetterSpacing() {
+      return 0.03;
+    }
+  }, false);
+  dart.trackLibraries("packages/capp_app/capp_app.dart", {
+    "package:capp_app/capp_app.dart": capp_app
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["capp_app.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAY4B;AACxB,YAAO,iCACE,sBACD,kGACC;IAEX;;;QAToB;;AAAQ,oDAAW,GAAG;;EAAC;;;;;;;;;;AAiBJ;IAAuB;;;QAHlC;;AAAQ,4DAAW,GAAG;;EAAC;;;;;;;;;;;;;;;;;;;;;;;;;;;;;UAmB5B;AAGnB,MAFF,cAAS;AACe,QAAtB,uBAAiB,KAAK;;IAE1B;;UAI0B;AAClB,wBAAoB,AAAY,eAAT,OAAO;AAC9B,sBAAkB,AAAY,eAAT,OAAO;AAElC,YAAO,kCAIC,6BACG,AAAe,0DAAU,qGAGb,yDACW,mEAChB,uCACP,uCAEU,AAAY,WAAD,6BACT,AAAY,WAAD,iCACT,AAAY,AAAU,WAAX,uBAAuB,0BACnC,AAAU,SAAD,gCACP,AAAU,SAAD;IAuBrC;;;IA/DI,uBAAiB;;;EAgEvB;;;;;;;;;;;;;;MA7DsB,6CAAc;YAAW,yBAC3C,kFACA,kFACA,sFACA;;;;;AA6Dc,eAAiB;AACjC,UAAO,AAAK,KAAD,wBACI,yCACF,gCAAuB,AAAK,IAAD;EAE1C;;QAE2C;AACzC,UAAO,AACF,AAYA,KAbM,oBAEgB,AAAE,eAAd,AAAK,IAAD,gCACY,8BACb,qCAGO,AAAE,eAAb,AAAK,IAAD,+BACa,8BACb,iDAKA,4BACE,iCACH;EAEnB;;;;;;;;;;;;;;;;;MAEkB,4BAAmB;;;MAiBzB,kBAAS;;;MACT,mBAAU;;;MAEV,qBAAY;;;MACZ,oBAAW;;;MAEX,qBAAY;;;MACZ,wBAAe;;;MAEf,iBAAQ;;;MAEd,6BAAoB","file":"../../../../../../packages/capp_app/capp_app.dart.lib.js"}');
+  // Exports:
+  return {
+    capp_app: capp_app
+  };
+}));
+
+//# sourceMappingURL=capp_app.dart.lib.js.map

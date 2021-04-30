@@ -1,5 +1,7 @@
 // Home Page Tab: includes hours, menu
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'loading.dart';
 import 'menu_tab.dart';
 
 class Home extends StatelessWidget {
@@ -9,13 +11,34 @@ class Home extends StatelessWidget {
     return MaterialApp(
       title: 'Home',
       home: Scaffold(
-        body: const CardWidget(),
+        body: StreamBuilder(
+          stream: FirebaseFirestore.instance
+              .collection("Cap Bar Hours")
+              .snapshots(),
+          builder:
+              (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+            if (snapshot.hasData) {
+              return ListView.builder(
+                itemCount: snapshot.data!.docs.length,
+                itemBuilder: (BuildContext context, int index) {
+                  final docData = snapshot.data!.docs[index].data();
+                  return ListTile(
+                    title: Text(docData.toString()),
+                  
+                  );
+                },
+              );
+            } else {
+              return Loading();
+            }
+          },
+        ),
       ),
     );
   }
 }
 
-class CardWidget extends StatelessWidget{
+class CardWidget extends StatelessWidget {
   @override
   const CardWidget({Key? key}) : super(key: key);
 
