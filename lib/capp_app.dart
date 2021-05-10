@@ -12,6 +12,7 @@ class CappApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Capp Bar App',
       home: CappAppHomePage(),
       theme: _buildCappBarTheme(),
@@ -53,9 +54,22 @@ class _CappAppHomePageState extends State<CappAppHomePage> {
     final textTheme = Theme.of(context).textTheme;
 
     return Scaffold(
-      /*appBar: AppBar(
-        //title: const Text('BottomNavigationBar Sample'),
-      ),*/
+      appBar: AppBar(
+        backgroundColor: coffeeYellow,
+        textTheme: textTheme,
+        title: const Text('Capp App'),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(Icons.search),
+            color: coffeeBrown,
+            tooltip: 'Search for Menu Item',
+            onPressed:(){
+              ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('Search Bar Implemented')));
+            },
+          )
+        ]
+      ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
       ), 

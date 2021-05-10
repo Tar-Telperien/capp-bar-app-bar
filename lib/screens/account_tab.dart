@@ -1,5 +1,6 @@
-// Account Tab
+// Inialize firebase firestore and firebase aut
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'loading.dart';
