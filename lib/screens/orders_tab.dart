@@ -1,5 +1,6 @@
 // Orders Tab
 // Include Order Manager Server/Controller
+import 'package:capp_app/capp_app.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +10,10 @@ class Orders extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+	     title: Text('Current Orders'),
+       backgroundColor: sageGreen,
+	    ),
       body: StreamBuilder(
         stream: FirebaseFirestore.instance.collection("Customers").snapshots(),
         builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
